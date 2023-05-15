@@ -9,4 +9,28 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
+  },
+  {
+    "ggandor/leap.nvim",
+    lazy = false,
+    config = function()
+      -- avoid clashing with nvim-surround plugin
+      vim.keymap.set({ "n", "i", "v", "x" }, "<leader>s", "<Plug>(leap-forward-to)")
+      vim.keymap.set({ "n", "i", "v", "x" }, "<leader>S", "<Plug>(leap-backward-to)")
+    end,
+  },
+  {
+    "mg979/vim-visual-multi",
+    lazy = false,
+    config = function() end,
+  },
 }
