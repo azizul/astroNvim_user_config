@@ -24,13 +24,14 @@ return {
     lazy = false,
     config = function()
       -- avoid clashing with nvim-surround plugin
-      vim.keymap.set({ "n", "i", "v", "x" }, "<leader>s", "<Plug>(leap-forward-to)")
-      vim.keymap.set({ "n", "i", "v", "x" }, "<leader>S", "<Plug>(leap-backward-to)")
+      vim.keymap.set({ "n", "v", "x" }, "<leader>s", "<Plug>(leap-forward-to)")
+      vim.keymap.set({ "n", "v", "x" }, "<leader>S", "<Plug>(leap-backward-to)")
     end,
   },
   {
     "mg979/vim-visual-multi",
     lazy = false,
-    config = function() end,
+    config = function()
+    end,
   },
 }
