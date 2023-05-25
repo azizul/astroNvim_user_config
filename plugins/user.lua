@@ -19,4 +19,12 @@ return {
       }
     end,
   },
+  {
+    "junegunn/vim-easy-align",
+    lazy = false,
+  },
+  {
+    "easymotion/vim-easymotion",
+    lazy = false,
+  },
 }
