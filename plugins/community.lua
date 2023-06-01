@@ -11,5 +11,6 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.json" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }

@@ -1,0 +1,22 @@
+{
+  "unsafe block": {
+    "prefix": [
+      "unsafe"
+    ],
+    "body": [
+      "unsafe {",
+      "\t$0",
+      "}"
+    ],
+    "description": "unsafe block"
+  },
+  "no mangle annotation": {
+    "prefix": [
+      "no_mangle"
+    ],
+    "body": [
+      "#[no_mangle]$0"
+    ],
+    "description": "no mangle annotation"
+  }
+}
