@@ -27,6 +27,11 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["ga"] = { "<Plug>(EasyAlign)", desc = "EasyAlign" },
+    -- keyboard language mappings
+    ["<leader>led"] = { "<cmd>set keymap=<cr>", desc = "Default" },
+    ["<leader>ler"] = { "<cmd>set keymap=russian-typograph<cr>", desc = "Russian Typograph" },
+    ["<leader>lea"] = { "<cmd>set keymap=arabic<cr>", desc = "Arabic" },
+    ["<leader>le"] = { name = "Keyboard language" },
   },
   v = {
     ["ga"] = { "<Plug>(EasyAlign)", desc = "EasyAlign" },
