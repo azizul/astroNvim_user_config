@@ -15,5 +15,7 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.clojure" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.cmake" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
